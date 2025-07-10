@@ -1,0 +1,33 @@
+# BƯỚC 1: Tạo thư mục và khởi tạo repo Git cục bộ
+mkdir heloo
+cd heloo
+git init
+
+# BƯỚC 2: Tạo file README.md và viết nội dung vào
+echo "# heloo git" > readme.md
+
+# BƯỚC 3: Thêm file vào Git và commit lần đầu
+git add .
+git commit -m "Thêm file readme.md"
+
+# BƯỚC 4: Tạo file main.py (có thể dùng VS Code hoặc echo)
+echo 'print("Xin chào Git và Python!")' > main.py
+
+# BƯỚC 5: Chạy thử file python
+python main.py
+
+# BƯỚC 6: Thêm file Python và commit
+git add main.py
+git commit -m "Thêm file main.py"
+
+# BƯỚC 7: Kết nối repo local với GitHub
+git remote add origin https://github.com/NguyenAnh060504/heloo.git
+
+# BƯỚC 8: Đổi tên nhánh từ master → main
+git branch -m main
+
+# BƯỚC 9: Push code lên GitHub lần đầu
+git push -u origin main
+
+# BƯỚC 10: Các lần sau chỉ cần push
+git push
